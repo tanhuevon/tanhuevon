@@ -1,4 +1,4 @@
-mv authorized_keys ~/.ssh/authorized_keys
+mv authorized_keys.txt ~/.ssh/authorized_keys
 chmod 300  ~/.ssh/authorized_keys
 
 dd if=/dev/zero of=/var/swap.img bs=1024k count=1000
