@@ -1,6 +1,6 @@
 #!/bin/bash
 cd tanhuevon/ ; git stash drop; git reset --hard; git pull
-
+sleep 1
 cd
 killall apache2
 killall  minerd
