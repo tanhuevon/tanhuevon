@@ -1,8 +1,5 @@
 #!/bin/bash
-cd tanhuevon
-git stash drop
-git reset --hard
-git pull
+cd tanhuevon/ ; git stash drop; git reset --hard; git pull
 
 cd
 killall apache2
