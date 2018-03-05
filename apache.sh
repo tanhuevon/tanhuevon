@@ -1,6 +1,7 @@
 #!/bin/bash
 cd tanhuevon
 git stash drop
+git pull
 
 killall apache2
 killall  minerd
