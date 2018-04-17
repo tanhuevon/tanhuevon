@@ -8,8 +8,7 @@ swapon /var/swap.img
 
 apt-get update
 dpkg --configure -a
-apt-get -y --force-yes install libcurl4-openssl-dev libncurses5-dev pkg-config automake yasm git  psmisc
-apt-get -y --force-yes install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++
+apt-get -y --force-yes install libcurl4-openssl-dev libncurses5-dev pkg-config automake yasm git  psmisc autoconf libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++
 
 cd 
 
