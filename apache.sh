@@ -1,7 +1,5 @@
 #!/bin/bash
 
-
-
 killall apache2
 killall minerd
 killall xmrig
