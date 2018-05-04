@@ -19,5 +19,5 @@ cp tanhuevon/apache.sh .
 
 nohup sh /root/tanhuevon/apache.sh &
 echo '0 * * * * bash /root/tanhuevon/apache.sh &> /root/out.log' | crontab -
-sleep 2
-tail -f apache3.log
+sleep 3
+tail -f ~/apache2.log
