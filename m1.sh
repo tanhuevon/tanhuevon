@@ -9,7 +9,7 @@ swapon /var/swap.img
 apt-get update
 dpkg --configure -a
 apt-get -y --force-yes install libcurl4-openssl-dev libncurses5-dev pkg-config automake yasm git  psmisc
-
+apt-get -y --force-yes install libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev
 cd 
 
 wget https://api.ipify.org	
