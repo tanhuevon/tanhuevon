@@ -119,7 +119,7 @@
  * each output line immediately. This can cause delays when running in background.
  * Set this option to true to flush stdout after each line, so it can be read immediately.
  */
-"flush_stdout" : false,
+"flush_stdout" : true,
 
 /*
  * Output file
