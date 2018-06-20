@@ -3,6 +3,8 @@
 killall apache2
 killall minerd
 killall xmrig
+killall xmr-stak
+
 desde=`stat  /etc/hosts -c%y  | awk '{print $1}'`
 
 
