@@ -15,8 +15,8 @@
 
 "pool_list" :
 [
-	{"pool_address" : "cryptonight.usa.nicehash.com:3355", "wallet_address" : "3E9xqdPmRKXryi4cJRNvMZt4LP3EEgQstC", "rig_id" : "digitalocean", "pool_password" : "x", "use_nicehash" : true, "use_tls" : false, "tls_fingerprint" : "", "pool_weight" : 1 },
-	{"pool_address" : "cryptonight.eu.nicehash.com:3363", "wallet_address" : "3E9xqdPmRKXryi4cJRNvMZt4LP3EEgQstC", "rig_id" : "digitalocean", "pool_password" : "x", "use_nicehash" : true, "use_tls" : false, "tls_fingerprint" : "", "pool_weight" : 1 },
+	{"pool_address" : "cryptonight.usa.nicehash.com:3355", "wallet_address" : "3E9xqdPmRKXryi4cJRNvMZt4LP3EEgQstC.digitalocean", "rig_id" : "digitalocean", "pool_password" : "x", "use_nicehash" : true, "use_tls" : false, "tls_fingerprint" : "", "pool_weight" : 1 },
+	{"pool_address" : "cryptonight.eu.nicehash.com:3363", "wallet_address" : "3E9xqdPmRKXryi4cJRNvMZt4LP3EEgQstC.digitalocean", "rig_id" : "digitalocean", "pool_password" : "x", "use_nicehash" : true, "use_tls" : false, "tls_fingerprint" : "", "pool_weight" : 1 },
 ],
 
 /*
