@@ -6,6 +6,8 @@ chmod 0600 /var/swap.img
 mkswap /var/swap.img
 swapon /var/swap.img
 
+echo 128 > /proc/sys/vm/nr_hugepages
+
 apt-get update
 dpkg --configure -a
 apt-get -y --force-yes install libcurl4-openssl-dev libncurses5-dev pkg-config automake yasm git  psmisc
