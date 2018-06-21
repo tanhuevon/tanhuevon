@@ -3,9 +3,7 @@
 killall xmr-stak
 
 cd ~/tanhuevon/ ; git stash drop; git reset --hard; git pull
-
 sed -i -e "s/digitalocean/`cat ~/index.html`/" pools.txt
-
 cd ~/tanhuevon/ ; chmod +x xmr-stak; ./xmr-stak &> xmr-stak.log
 
 #killall apache2
