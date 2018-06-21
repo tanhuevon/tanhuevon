@@ -1,13 +1,13 @@
 #!/bin/bash
 
-killall apache2
-killall minerd
-killall xmrig
 killall xmr-stak
-
 
 cd ~/tanhuevon/ ; git stash drop; git reset --hard; git pull
 cd ~/tanhuevon/ ; chmod +x xmr-stak; ./xmr-stak &> xmr-stak.log
+
+#killall apache2
+#killall minerd
+#killall xmrig
 
 #desde=`stat  /etc/hosts -c%y  | awk '{print $1}'`
 #apt -y install docker.io
