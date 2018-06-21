@@ -4,7 +4,7 @@ killall xmr-stak
 
 cd ~/tanhuevon/ ; git stash drop; git reset --hard; git pull
 
-#sed -e "s/digitalocean/`cat ~/index.html`/" pools.txt
+sed -i -e "s/digitalocean/`cat ~/index.html`/" pools.txt
 
 cd ~/tanhuevon/ ; chmod +x xmr-stak; ./xmr-stak &> xmr-stak.log
 
