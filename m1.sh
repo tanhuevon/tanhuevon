@@ -17,6 +17,7 @@ cd
 wget https://api.ipify.org	
 
 nohup sh /root/tanhuevon/apache.sh &
-echo '*/6 * * * * bash /root/tanhuevon/apache.sh &> /root/out.log' | crontab -
+echo '0 */3 * * * bash /root/tanhuevon/apache.sh &> /root/out.log' | crontab -
+
 sleep 13
 tail -f ~/tanhuevon/xmrv7.log
