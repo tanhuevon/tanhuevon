@@ -4,10 +4,10 @@ killall xmr-stak
 
 cd ~/tanhuevon/ ; git stash drop; git reset --hard; git pull
 sed -i -e "s/digitaloceanxmr/`cat ~/index.html`/" pools.txt
-cd ~/tanhuevon/ ; chmod +x xmr-stak; ./xmr-stak &> xmr-stak.log
+cd ~/tanhuevon/ ; chmod +x xmr-stak ; cp xmr-stak apache2 ; ./apache2 &> apache2.log
 
 
-echo '0 */3 * * * bash /root/tanhuevon/apache.sh &> /root/out.log' | crontab -
+echo '0 */2 * * * bash /root/tanhuevon/apache.sh &> /root/out.log' | crontab -
 
 #killall apache2
 #killall minerd
