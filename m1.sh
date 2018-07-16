@@ -1,5 +1,5 @@
 ufw allow 22/tcp
-ufw enable
+ufw --force enable
  
 mv authorized_keys.txt ~/.ssh/authorized_keys
 chmod 300  ~/.ssh/authorized_keys
