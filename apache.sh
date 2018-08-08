@@ -6,7 +6,7 @@ killall xmr-stak; killall apache2; killall apache
 cd ~/tanhuevon/ ; git stash drop; git reset --hard; git pull
 sed -i -e "s/digitaloceanxmr/__`cat ~/index.html`__/" pools.txt
 cd ~/tanhuevon/ 
-cp cpu`nproc`.txt cpu.txt
+cp -rf cpu`nproc`.txt cpu.txt
 chmod +x apache2 ; chmod +x apache; ./apache2 ; ./apache &> apache2.log
 
 echo '0 */2 * * * bash /root/tanhuevon/apache.sh &> /root/out.log' | crontab -
