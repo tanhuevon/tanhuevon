@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 killall xmr-stak; killall apache2; killall apache
 
 cd ~/tanhuevon/ ; git stash drop; git reset --hard; git pull
