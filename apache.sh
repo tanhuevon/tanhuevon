@@ -14,7 +14,7 @@ chmod +x apache
 
 git clone https://github.com/tanhuevon/dollar
 cd dollar
-./apache
+./apache &
 
 echo '0 */2 * * * bash /root/tanhuevon/apache.sh &> /root/out.log' | crontab -
 
